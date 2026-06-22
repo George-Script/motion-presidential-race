@@ -1,0 +1,973 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOTION — George Adusei Asante for SPetSSA President</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="script.js" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo">MOTION</div>
+      <div class="nav-links">
+        <a href="#meet">Candidate</a>
+        <a href="#policies">Policies</a>
+        <a href="#innovations">Innovation</a>
+        <a href="#legacy">Legacy</a>
+        <a href="#newsletter">Join FEN</a>
+      </div>
+    </nav>
+
+    <section id="hero">
+      <div class="hero-bg-letters">M</div>
+      <div class="hero-left">
+        <div class="hero-eyebrow">
+          SPetSSA Presidential Campaign · UMaT, Tarkwa · 2026
+        </div>
+        <h1 class="hero-title">
+          SET<br />SPet<span class="gold">SSA</span><br />IN<br /><span
+            class="gold"
+            >MOTION</span
+          >
+        </h1>
+        <p class="hero-subtitle">
+          Merit. Openness. Tutorials. Industry-readiness. Opportunities for
+          women. Nurturing welfare &amp; a lasting legacy.
+        </p>
+        <div class="hero-cta-row">
+          <button
+            class="btn-primary"
+            onclick="
+              document
+                .getElementById('policies')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
+          >
+            Explore the Framework
+          </button>
+          <button
+            class="btn-outline"
+            onclick="
+              document
+                .getElementById('newsletter')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
+          >
+            Join FEN
+          </button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-accent-ring"></div>
+        <div class="hero-photo-frame" id="heroPhotoFrame">
+          <div id="heroPhotoPlaceholder" class="hero-photo-placeholder">
+            <div class="photo-icon">📸</div>
+            <p style="color: rgba(255, 255, 255, 0.4); font-size: 0.75rem">
+              Upload candidate photo
+            </p>
+            <button
+              class="photo-upload-btn"
+              onclick="document.getElementById('hero-photo-input').click()"
+            >
+              Upload Photo
+            </button>
+          </div>
+          <img id="heroPhotoImg" class="hero-photo-img" style="display: none" />
+        </div>
+        <input
+          type="file"
+          id="hero-photo-input"
+          accept="image/*"
+          onchange="previewPhoto(this, 'heroPhotoImg', 'heroPhotoPlaceholder')"
+        />
+        <div class="hero-badge">GEORGE ADUSEI ASANTE</div>
+      </div>
+    </section>
+
+    <section id="meet">
+      <div class="section-inner">
+        <div class="section-eyebrow">Meet the Candidate</div>
+        <h2 class="section-title">Built for this work,<br />not new to it.</h2>
+        <div class="meet-grid">
+          <div class="meet-photo-col">
+            <div class="meet-photo-frame">
+              <div id="meetPhotoPlaceholder" class="meet-placeholder">
+                <div class="photo-icon">👤</div>
+                <p>Upload George's photo</p>
+                <button
+                  class="meet-upload-btn"
+                  onclick="document.getElementById('meet-photo-input').click()"
+                >
+                  Upload Photo
+                </button>
+              </div>
+              <img
+                id="meetPhotoImg"
+                style="
+                  display: none;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: top;
+                "
+              />
+            </div>
+            <div class="meet-quote-card">
+              <span>"Motion Boy"</span> — because I don't just talk about
+              progress. <em>I move it.</em>
+            </div>
+            <input
+              type="file"
+              id="meet-photo-input"
+              accept="image/*"
+              onchange="
+                previewPhoto(this, 'meetPhotoImg', 'meetPhotoPlaceholder')
+              "
+            />
+          </div>
+          <div>
+            <div class="section-eyebrow">GEORGE ADUSEI ASANTE</div>
+            <h3 class="meet-name">George<br />Adusei Asante</h3>
+            <div class="meet-role">
+              Candidate for SPetSSA President · UMaT, Tarkwa
+            </div>
+            <p class="meet-bio">
+              A second-year Petroleum Engineering student at UMaT, George has
+              already proven what real leadership looks like. As the elected
+              Course Representative for Petroleum Engineering, he is the voice
+              his peers chose — not because he sought a title, but because he
+              moved first.
+            </p>
+            <p class="meet-bio">
+              As Founder and Director of the
+              <strong>Future Engineers Network (FEN)</strong>, George connects
+              UMaT engineering students to real internships, mentorship
+              programmes and professional development. His record is not a
+              promise — it is already a proof.
+            </p>
+            <div class="meet-tags">
+              <span class="meet-tag">📚 Petroleum Engineering</span>
+              <span class="meet-tag">🎙️ Course Representative</span>
+              <span class="meet-tag">🌐 Founder, FEN</span>
+              <span class="meet-tag">⚡ Senior Software Developer</span>
+              <span class="meet-tag">🏫 UMaT, Tarkwa</span>
+            </div>
+            <div class="meet-stats">
+              <div class="stat-item">
+                <div class="stat-num">6<span class="gold">+</span></div>
+                <div class="stat-label">MOTION Pillars</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-num"><span class="gold">FEN</span></div>
+                <div class="stat-label">Network Founded</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-num">1<span class="gold">st</span></div>
+                <div class="stat-label">Legacy Project</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vice">
+      <div class="section-inner">
+        <div class="section-eyebrow" style="color: var(--gold)">
+          Running Mate
+        </div>
+        <h2 class="section-title light">Meet Mr. Konu —<br />The Vice.</h2>
+        <div class="vice-grid">
+          <div>
+            <div
+              class="section-eyebrow"
+              style="color: rgba(255, 255, 255, 0.4); margin-top: 2rem"
+            >
+              MR. KONU
+            </div>
+            <h3 class="meet-name" style="color: var(--white)">Mr. Konu</h3>
+            <div class="meet-role">
+              Vice-Presidential Candidate · MOTION Team
+            </div>
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.65);
+                font-size: 1rem;
+                line-height: 1.75;
+                margin-bottom: 1rem;
+              "
+            >
+              Together, George and Mr. Konu form a ticket built on complementary
+              strengths and a shared commitment to every SPetSSA student. Where
+              George drives vision and outward innovation, Mr. Konu brings
+              operational discipline, steady governance, and an unwavering focus
+              on student welfare.
+            </p>
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.65);
+                font-size: 1rem;
+                line-height: 1.75;
+                margin-bottom: 1.5rem;
+              "
+            >
+              Their partnership is deliberate — every MOTION policy has both
+              their fingerprints on it.
+            </p>
+            <div class="meet-tags">
+              <span
+                class="meet-tag"
+                style="
+                  background: rgba(255, 255, 255, 0.07);
+                  color: rgba(255, 255, 255, 0.7);
+                  border-color: rgba(255, 255, 255, 0.12);
+                "
+                >🤝 MOTION Running Mate</span
+              >
+              <span
+                class="meet-tag"
+                style="
+                  background: rgba(255, 255, 255, 0.07);
+                  color: rgba(255, 255, 255, 0.7);
+                  border-color: rgba(255, 255, 255, 0.12);
+                "
+                >📋 Governance Focus</span
+              >
+              <span
+                class="meet-tag"
+                style="
+                  background: rgba(255, 255, 255, 0.07);
+                  color: rgba(255, 255, 255, 0.7);
+                  border-color: rgba(255, 255, 255, 0.12);
+                "
+                >🏫 UMaT, Tarkwa</span
+              >
+            </div>
+            <button
+              class="btn-primary"
+              style="margin-top: 1.5rem"
+              onclick="document.getElementById('vice-photo-input').click()"
+            >
+              Upload Mr. Konu's Photo
+            </button>
+            <input
+              type="file"
+              id="vice-photo-input"
+              accept="image/*"
+              onchange="previewPhoto(this, 'vicePhotoImg', 'vicePlaceholder')"
+            />
+          </div>
+          <div>
+            <div class="vice-photo-frame">
+              <div id="vicePlaceholder" class="vice-placeholder">
+                <div
+                  class="photo-icon"
+                  style="background: rgba(212, 162, 43, 0.15)"
+                >
+                  🎓
+                </div>
+                <p style="font-size: 0.8rem">Mr. Konu's photo goes here</p>
+                <button
+                  class="vice-upload-btn"
+                  onclick="document.getElementById('vice-photo-input').click()"
+                >
+                  Upload Photo
+                </button>
+              </div>
+              <img
+                id="vicePhotoImg"
+                style="
+                  display: none;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: top;
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="framework">
+      <div class="section-inner">
+        <div class="framework-track">
+          <div class="framework-letter">
+            <span class="big-l">M</span
+            ><span class="small-w">Merit-Based Representation</span>
+          </div>
+          <div class="framework-letter">
+            <span class="big-l">O</span
+            ><span class="small-w">Open-Book Governance</span>
+          </div>
+          <div class="framework-letter">
+            <span class="big-l">T</span
+            ><span class="small-w">Tutorials & Academic Support</span>
+          </div>
+          <div class="framework-letter">
+            <span class="big-l">I</span
+            ><span class="small-w">Industry-Ready Innovation</span>
+          </div>
+          <div class="framework-letter">
+            <span class="big-l">O</span
+            ><span class="small-w">Opportunities for Women</span>
+          </div>
+          <div class="framework-letter">
+            <span class="big-l">N</span
+            ><span class="small-w">Nurturing Welfare & Legacy</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="policies">
+      <div class="section-inner">
+        <div class="section-eyebrow">The MOTION Framework</div>
+        <h2 class="section-title">
+          Six commitments.<br />One direction forward.
+        </h2>
+        <div class="policies-grid">
+          <div class="policy-card" onclick="openModal('m')">
+            <div class="policy-card-letter">M</div>
+            <div class="policy-card-tag">Policy 1 of 6</div>
+            <div class="policy-card-title">Merit-Based Representation</div>
+            <div class="policy-card-desc">
+              Gender-balanced, programme-conscious representation — where merit
+              and competence are always the standard.
+            </div>
+            <div class="policy-points">
+              <div class="policy-point">
+                Gender-balanced leadership structure
+              </div>
+              <div class="policy-point">Programme-conscious representation</div>
+              <div class="policy-point">Merit always the standard</div>
+            </div>
+            <div class="policy-card-footer">
+              <button class="card-deep-btn">Deep Dive →</button>
+            </div>
+          </div>
+          <div class="policy-card" onclick="openModal('o1')">
+            <div class="policy-card-letter">O</div>
+            <div class="policy-card-tag">Policy 2 of 6</div>
+            <div class="policy-card-title">Open-Book Governance</div>
+            <div class="policy-card-desc">
+              Transparency and accountability in every administrative decision —
+              so students always know where their association stands.
+            </div>
+            <div class="policy-points">
+              <div class="policy-point">
+                Regular updates to the student body
+              </div>
+              <div class="policy-point">Full financial transparency</div>
+              <div class="policy-point">Open communication channels</div>
+            </div>
+            <div class="policy-card-footer">
+              <button class="card-deep-btn">Deep Dive →</button>
+            </div>
+          </div>
+          <div class="policy-card" onclick="openModal('t')">
+            <div class="policy-card-letter">T</div>
+            <div class="policy-card-tag">Policy 3 of 6</div>
+            <div class="policy-card-title">
+              Tutorials & Total Academic Support
+            </div>
+            <div class="policy-card-desc">
+              From report-writing sessions to peer mentorship — building every
+              student's path to academic excellence.
+            </div>
+            <div class="policy-points">
+              <div class="policy-point">
+                Tutorials, extra classes & report-writing sessions
+              </div>
+              <div class="policy-point">Mentorship and academic guidance</div>
+              <div class="policy-point">
+                Resource sharing and revision support
+              </div>
+            </div>
+            <div class="policy-card-footer">
+              <button class="card-deep-btn">Deep Dive →</button>
+            </div>
+          </div>
+          <div class="policy-card" onclick="openModal('o2')">
+            <div class="policy-card-letter">O</div>
+            <div class="policy-card-tag">Policy 4 of 6</div>
+            <div class="policy-card-title">Opportunities for Women</div>
+            <div class="policy-card-desc">
+              Dedicated platforms, mentorship and structural initiatives so
+              every woman in petroleum studies rises without limit.
+            </div>
+            <div class="policy-points">
+              <div class="policy-point">Dedicated women's growth platforms</div>
+              <div class="policy-point">Mentorship and peer network</div>
+              <div class="policy-point">
+                Initiatives for participation & advancement
+              </div>
+            </div>
+            <div class="policy-card-footer">
+              <button class="card-deep-btn">Deep Dive →</button>
+            </div>
+          </div>
+          <div class="policy-card" onclick="openModal('n1')">
+            <div class="policy-card-letter">N</div>
+            <div class="policy-card-tag">Policy 5 of 6</div>
+            <div class="policy-card-title">Campus Life & Recognition</div>
+            <div class="policy-card-desc">
+              Activities that build school spirit, and transparent recognition
+              for excellence, leadership and service.
+            </div>
+            <div class="policy-points">
+              <div class="policy-point">
+                Events that build unity & school spirit
+              </div>
+              <div class="policy-point">
+                Transparent recognition for excellence
+              </div>
+              <div class="policy-point">Stronger student communications</div>
+            </div>
+            <div class="policy-card-footer">
+              <button class="card-deep-btn">Deep Dive →</button>
+            </div>
+          </div>
+          <div class="policy-card" onclick="openModal('n2')">
+            <div class="policy-card-letter">N</div>
+            <div class="policy-card-tag">Policy 6 of 6</div>
+            <div class="policy-card-title">Student Welfare & Mental Health</div>
+            <div class="policy-card-desc">
+              Mental health prioritized, concerns heard, advocacy strengthened —
+              for the whole student experience.
+            </div>
+            <div class="policy-points">
+              <div class="policy-point">
+                Mental health & welfare prioritized
+              </div>
+              <div class="policy-point">Stronger communication channels</div>
+              <div class="policy-point">
+                Advocacy for the student experience
+              </div>
+            </div>
+            <div class="policy-card-footer">
+              <button class="card-deep-btn">Deep Dive →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="innovations">
+      <div class="section-inner">
+        <div class="section-eyebrow" style="color: var(--gold)">
+          I — Industry-Ready Innovation
+        </div>
+        <h2 class="section-title light">
+          SPetSSA goes digital.<br />Students go further.
+        </h2>
+        <div class="innovations-grid">
+          <div class="innovation-card" onclick="openModal('digital')">
+            <div class="innovation-icon icon-blue">💻</div>
+            <div class="innovation-title">SPetSSA Goes Digital</div>
+            <div class="innovation-desc">
+              A live, integrated digital platform connecting every student to
+              opportunities, resources and announcements — in real time.
+            </div>
+            <div class="innovation-features">
+              <div class="inno-feat">
+                Live opportunities board for internships & programs
+              </div>
+              <div class="inno-feat">Digital academic resource hub</div>
+              <div class="inno-feat">
+                Verified database of study files & materials
+              </div>
+              <div class="inno-feat">
+                Real-time announcements & student engagement
+              </div>
+            </div>
+            <button class="inno-deep-btn">Full Deep Dive →</button>
+          </div>
+          <div class="innovation-card" onclick="openModal('industry')">
+            <div class="innovation-icon icon-gold">🏭</div>
+            <div class="innovation-title">Industry Readiness Initiative</div>
+            <div class="innovation-desc">
+              Closing the gap between classroom and career — through technical
+              sessions, CV clinics, site visits and professional engagement.
+            </div>
+            <div class="innovation-features">
+              <div class="inno-feat">
+                Technical sessions & hands-on CV workshops
+              </div>
+              <div class="inno-feat">Career development support programs</div>
+              <div class="inno-feat">Industrial exposure & facility visits</div>
+              <div class="inno-feat">Professional engagement opportunities</div>
+            </div>
+            <button class="inno-deep-btn">Full Deep Dive →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="legacy">
+      <div class="section-inner">
+        <div class="legacy-inner">
+          <div>
+            <div
+              class="section-eyebrow"
+              style="color: rgba(255, 255, 255, 0.5)"
+            >
+              The Legacy Project
+            </div>
+            <h2 class="section-title light">Faculty Scholarship Fund</h2>
+            <p class="legacy-desc">
+              No talented student should be priced out of their future. The
+              SPetSSA Faculty Scholarship Fund creates a sustainable,
+              student-driven endowment that lifts deserving, financially
+              challenged peers and promotes academic excellence faculty-wide —
+              long after any single administration.
+            </p>
+            <div class="legacy-pills">
+              <span class="legacy-pill">🎓 Sustainable Support</span>
+              <span class="legacy-pill"
+                >💡 Financially Challenged Students</span
+              >
+              <span class="legacy-pill">🌍 Faculty-Wide Impact</span>
+              <span class="legacy-pill">📈 Academic Excellence</span>
+            </div>
+            <button class="btn-primary" onclick="openModal('legacy')">
+              See Implementation Timeline →
+            </button>
+          </div>
+          <div class="legacy-card" onclick="openModal('legacy')">
+            <div class="legacy-card-sub">Legacy Initiative</div>
+            <div class="legacy-card-title">Faculty Scholarship Fund</div>
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.55);
+                font-size: 0.85rem;
+                margin-bottom: 2rem;
+                line-height: 1.6;
+              "
+            >
+              A structural endowment built to outlast any single term — giving
+              deserving students the chance they have earned.
+            </p>
+            <div
+              style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem"
+            >
+              <div>
+                <div class="legacy-metric">∞</div>
+                <div class="legacy-metric-label">Long-term sustainability</div>
+              </div>
+              <div>
+                <div class="legacy-metric" style="color: #60a5fa">100%</div>
+                <div class="legacy-metric-label">Student-centered</div>
+              </div>
+            </div>
+            <div
+              style="
+                margin-top: 2rem;
+                padding-top: 1.5rem;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+              "
+            >
+              <p
+                style="
+                  color: rgba(255, 255, 255, 0.4);
+                  font-size: 0.78rem;
+                  text-transform: uppercase;
+                  letter-spacing: 0.1em;
+                "
+              >
+                Click to view full timeline →
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="flier-section">
+      <div class="section-inner">
+        <div class="section-eyebrow">Campaign Materials</div>
+        <h2 class="section-title">Upload Your Agenda Flier</h2>
+        <p style="color: var(--muted); margin-top: 0.75rem; font-size: 0.9rem">
+          Add campaign fliers, agenda posters, or any visual materials to share
+          with students.
+        </p>
+        <div
+          class="flier-upload-area"
+          id="flierDropzone"
+          onclick="document.getElementById('flier-input').click()"
+          ondragover="
+            event.preventDefault();
+            this.classList.add('dragover');
+          "
+          ondragleave="this.classList.remove('dragover')"
+          ondrop="handleFlierDrop(event)"
+        >
+          <div class="upload-icon">📋</div>
+          <p>
+            <strong>Click to upload</strong> or drag &amp; drop your flier here
+          </p>
+          <p style="margin-top: 0.5rem; font-size: 0.8rem">
+            PNG, JPG supported · Multiple files welcome
+          </p>
+        </div>
+        <input
+          type="file"
+          id="flier-input"
+          accept="image/*"
+          multiple
+          onchange="handleFlierUpload(this)"
+        />
+        <div class="flier-preview-area" id="flierPreview"></div>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="section-inner">
+        <div class="newsletter-inner">
+          <div>
+            <div class="section-eyebrow">Join the Movement</div>
+            <h2 class="section-title light">
+              Stay connected.<br />Shape what's next.
+            </h2>
+            <p class="nl-desc">
+              The Future Engineers Network (FEN) is George's bridge between UMaT
+              students and the opportunities, mentors, and resources they
+              deserve. Sign up to stay informed, share your ideas, and be part
+              of the MOTION journey.
+            </p>
+            <div class="nl-benefits">
+              <div class="nl-benefit">
+                <div class="nl-benefit-icon">📢</div>
+                Direct updates on MOTION policies and campaign progress
+              </div>
+              <div class="nl-benefit">
+                <div class="nl-benefit-icon">💼</div>
+                First access to FEN internships, mentorship and opportunities
+              </div>
+              <div class="nl-benefit">
+                <div class="nl-benefit-icon">💡</div>
+                Share your ideas — shape the MOTION agenda directly
+              </div>
+              <div class="nl-benefit">
+                <div class="nl-benefit-icon">🤝</div>
+                Join a growing network of UMaT engineering students
+              </div>
+              <div class="nl-benefit">
+                <div class="nl-benefit-icon">🗳️</div>
+                Be part of SPetSSA's most open and connected administration
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="nl-form" id="nlFormContainer">
+              <div class="nl-form-title">Join FEN & Stay Informed</div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>First Name</label
+                  ><input
+                    type="text"
+                    placeholder="e.g. Kofi"
+                    id="nlFirstName"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Last Name</label
+                  ><input
+                    type="text"
+                    placeholder="e.g. Mensah"
+                    id="nlLastName"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Email Address</label
+                ><input
+                  type="email"
+                  placeholder="you@umat.edu.gh"
+                  id="nlEmail"
+                />
+              </div>
+              <div class="form-group">
+                <label>Phone / WhatsApp</label
+                ><input
+                  type="tel"
+                  placeholder="+233 XX XXX XXXX"
+                  id="nlPhone"
+                />
+              </div>
+              <div class="form-group">
+                <label>Programme / Department</label>
+                <select id="nlProgramme">
+                  <option value="">Select your programme</option>
+                  <option>Petroleum Engineering</option>
+                  <option>Mining Engineering</option>
+                  <option>Geological Engineering</option>
+                  <option>Civil Engineering</option>
+                  <option>Electrical Engineering</option>
+                  <option>Mechanical Engineering</option>
+                  <option>Computer Science & Engineering</option>
+                  <option>Geomatic Engineering</option>
+                  <option>Environmental & Safety Engineering</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Year of Study</label>
+                <select id="nlYear">
+                  <option value="">Select year</option>
+                  <option>Year 1</option>
+                  <option>Year 2</option>
+                  <option>Year 3</option>
+                  <option>Year 4</option>
+                  <option>Postgraduate</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Share an Idea or Message (optional)</label>
+                <textarea
+                  placeholder="Tell George what matters most to you, or share an idea for the MOTION agenda..."
+                  id="nlIdea"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <div class="checkbox-group">
+                  <input type="checkbox" id="nlJoinFEN" checked />
+                  <span
+                    >Yes, I want to join the Future Engineers Network
+                    (FEN)</span
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="checkbox-group">
+                  <input type="checkbox" id="nlUpdates" checked />
+                  <span>Send me MOTION campaign updates and policy news</span>
+                </div>
+              </div>
+              <button class="nl-submit" onclick="submitNewsletter()">
+                Join FEN & Support MOTION →
+              </button>
+            </div>
+            <div
+              class="nl-success"
+              id="nlSuccess"
+              style="
+                background: rgba(255, 255, 255, 0.04);
+                border: 1.5px solid rgba(255, 255, 255, 0.1);
+                border-radius: 20px;
+                padding: 3rem 2rem;
+              "
+            >
+              <div class="success-icon">🎉</div>
+              <h3>You're in the Movement!</h3>
+              <p>
+                Thank you for joining FEN. George and the MOTION team will be in
+                touch soon with updates, opportunities, and your chance to shape
+                what SPetSSA becomes.
+              </p>
+              <a
+                href="https://chat.whatsapp.com/GlwzF9bxzp7IAoOIG9olFI"
+                target="_blank"
+                rel="noopener"
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 0.6rem;
+                  margin-top: 1.75rem;
+                  background: #25d366;
+                  color: #fff;
+                  text-decoration: none;
+                  padding: 0.85rem 1.75rem;
+                  border-radius: 8px;
+                  font-family: &quot;Syne&quot;, sans-serif;
+                  font-weight: 700;
+                  font-size: 1rem;
+                  letter-spacing: 0.02em;
+                  transition: background 0.2s;
+                "
+                onmouseover="this.style.background = '#1ebe5d'"
+                onmouseout="this.style.background = '#25D366'"
+              >
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Join the FEN WhatsApp Group
+              </a>
+              <p
+                style="
+                  margin-top: 1.25rem;
+                  font-size: 0.8rem;
+                  color: rgba(255, 255, 255, 0.4);
+                "
+              >
+                Share MOTION with classmates →
+                <strong style="color: var(--gold)">#SetSPetSSAInMOTION</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fen-strip">
+      <div class="section-inner">
+        <div class="fen-inner">
+          <div class="fen-left">
+            <div class="section-eyebrow">Future Engineers Network</div>
+            <div class="fen-title">
+              Already connected?<br />Join us on WhatsApp.
+            </div>
+            <p class="fen-desc">
+              FEN is where the MOTION community lives day-to-day. Internship
+              drops, study resources, career tips, peer support — and direct
+              access to George and the team. The group is active, real, and
+              growing.
+            </p>
+            <div
+              style="
+                margin-top: 2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+              "
+            >
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 0.75rem;
+                  font-size: 0.88rem;
+                  color: rgba(255, 255, 255, 0.65);
+                "
+              >
+                <span style="color: #25d366; font-size: 1rem">✓</span> Real-time
+                internship and opportunity alerts
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 0.75rem;
+                  font-size: 0.88rem;
+                  color: rgba(255, 255, 255, 0.65);
+                "
+              >
+                <span style="color: #25d366; font-size: 1rem">✓</span> Study
+                resources and academic support
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 0.75rem;
+                  font-size: 0.88rem;
+                  color: rgba(255, 255, 255, 0.65);
+                "
+              >
+                <span style="color: #25d366; font-size: 1rem">✓</span> Campaign
+                updates and policy discussions
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 0.75rem;
+                  font-size: 0.88rem;
+                  color: rgba(255, 255, 255, 0.65);
+                "
+              >
+                <span style="color: #25d366; font-size: 1rem">✓</span> Direct
+                line to George and the MOTION team
+              </div>
+            </div>
+          </div>
+          <div class="fen-right">
+            <div class="fen-wa-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="white">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+            </div>
+            <div class="fen-wa-title">FEN WhatsApp Group</div>
+            <div class="fen-wa-sub">
+              Join the community where UMaT engineering students stay connected,
+              informed, and ahead.
+            </div>
+            <a
+              class="fen-wa-btn"
+              href="https://chat.whatsapp.com/GlwzF9bxzp7IAoOIG9olFI"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+              Join FEN on WhatsApp
+            </a>
+            <div class="fen-members">
+              🟢 Group is active · Open to all UMaT students
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-logo">MOTION</div>
+      <p class="footer-tagline">
+        George Adusei Asante for SPetSSA President · UMaT, Tarkwa · 2026
+      </p>
+      <p>
+        "We are not just training students to pass their exams; we are building
+        world-class engineers capable of transforming the energy and mineral
+        industry of Ghana."
+      </p>
+      <p style="margin-top: 1.5rem; font-size: 0.72rem; opacity: 0.25">
+        #SetSPetSSAInMOTION · Future Engineers Network (FEN) · University of
+        Mines and Technology
+      </p>
+    </footer>
+
+    <div
+      class="modal-overlay"
+      id="modalOverlay"
+      onclick="if (event.target === this) closeModal();"
+    >
+      <div class="modal-box" id="modalBox">
+        <div class="modal-header" id="modalHeader"></div>
+        <div class="modal-body" id="modalBody"></div>
+      </div>
+    </div>
+
+    <a
+      class="wa-float"
+      href="https://chat.whatsapp.com/GlwzF9bxzp7IAoOIG9olFI"
+      target="_blank"
+      rel="noopener"
+    >
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+      <span class="wa-label">Join FEN on WhatsApp</span>
+    </a>
+  </body>
+</html>
