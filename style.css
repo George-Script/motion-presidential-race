@@ -1255,9 +1255,6 @@ footer p {
   line-height: 1.5;
   margin-top: 0.2rem;
 }
-input[type="file"] {
-  display: none;
-}
 /* Floating WA button */
 .wa-float {
   position: fixed;
