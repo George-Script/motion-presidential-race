@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MOTION — George Adusei Asante for SPetSSA President</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
     <nav>
@@ -59,27 +60,13 @@
       </div>
       <div class="hero-right">
         <div class="hero-accent-ring"></div>
-        <div class="hero-photo-frame" id="heroPhotoFrame">
-          <div id="heroPhotoPlaceholder" class="hero-photo-placeholder">
-            <div class="photo-icon">📸</div>
-            <p style="color: rgba(255, 255, 255, 0.4); font-size: 0.75rem">
-              Upload candidate photo
-            </p>
-            <button
-              class="photo-upload-btn"
-              onclick="document.getElementById('hero-photo-input').click()"
-            >
-              Upload Photo
-            </button>
-          </div>
-          <img id="heroPhotoImg" class="hero-photo-img" style="display: none" />
+        <div class="hero-photo-frame">
+          <img
+            src="./images/george-passport.jpeg"
+            alt="George Adusei Asante"
+            class="hero-photo-img"
+          />
         </div>
-        <input
-          type="file"
-          id="hero-photo-input"
-          accept="image/*"
-          onchange="previewPhoto(this, 'heroPhotoImg', 'heroPhotoPlaceholder')"
-        />
         <div class="hero-badge">GEORGE ADUSEI ASANTE</div>
       </div>
     </section>
@@ -91,25 +78,10 @@
         <div class="meet-grid">
           <div class="meet-photo-col">
             <div class="meet-photo-frame">
-              <div id="meetPhotoPlaceholder" class="meet-placeholder">
-                <div class="photo-icon">👤</div>
-                <p>Upload George's photo</p>
-                <button
-                  class="meet-upload-btn"
-                  onclick="document.getElementById('meet-photo-input').click()"
-                >
-                  Upload Photo
-                </button>
-              </div>
               <img
-                id="meetPhotoImg"
-                style="
-                  display: none;
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                  object-position: top;
-                "
+                src="./images/george-full.jpeg"
+                alt="George Adusei Asante"
+                class="meet-photo-img"
               />
             </div>
             <div class="meet-quote-card">
@@ -146,11 +118,11 @@
               promise — it is already a proof.
             </p>
             <div class="meet-tags">
-              <span class="meet-tag">📚 Petroleum Engineering</span>
-              <span class="meet-tag">🎙️ Course Representative</span>
-              <span class="meet-tag">🌐 Founder, FEN</span>
-              <span class="meet-tag">⚡ Senior Software Developer</span>
-              <span class="meet-tag">🏫 UMaT, Tarkwa</span>
+              <span class="meet-tag">Petroleum Engineering</span>
+              <span class="meet-tag">Course Representative</span>
+              <span class="meet-tag">Founder, FEN</span>
+              <span class="meet-tag">Software Developer</span>
+              <span class="meet-tag">UMaT, Tarkwa</span>
             </div>
             <div class="meet-stats">
               <div class="stat-item">
@@ -214,75 +186,13 @@
               Their partnership is deliberate — every MOTION policy has both
               their fingerprints on it.
             </p>
-            <div class="meet-tags">
-              <span
-                class="meet-tag"
-                style="
-                  background: rgba(255, 255, 255, 0.07);
-                  color: rgba(255, 255, 255, 0.7);
-                  border-color: rgba(255, 255, 255, 0.12);
-                "
-                >🤝 MOTION Running Mate</span
-              >
-              <span
-                class="meet-tag"
-                style="
-                  background: rgba(255, 255, 255, 0.07);
-                  color: rgba(255, 255, 255, 0.7);
-                  border-color: rgba(255, 255, 255, 0.12);
-                "
-                >📋 Governance Focus</span
-              >
-              <span
-                class="meet-tag"
-                style="
-                  background: rgba(255, 255, 255, 0.07);
-                  color: rgba(255, 255, 255, 0.7);
-                  border-color: rgba(255, 255, 255, 0.12);
-                "
-                >🏫 UMaT, Tarkwa</span
-              >
-            </div>
-            <button
-              class="btn-primary"
-              style="margin-top: 1.5rem"
-              onclick="document.getElementById('vice-photo-input').click()"
-            >
-              Upload Mr. Konu's Photo
-            </button>
-            <input
-              type="file"
-              id="vice-photo-input"
-              accept="image/*"
-              onchange="previewPhoto(this, 'vicePhotoImg', 'vicePlaceholder')"
-            />
           </div>
           <div>
             <div class="vice-photo-frame">
-              <div id="vicePlaceholder" class="vice-placeholder">
-                <div
-                  class="photo-icon"
-                  style="background: rgba(212, 162, 43, 0.15)"
-                >
-                  🎓
-                </div>
-                <p style="font-size: 0.8rem">Mr. Konu's photo goes here</p>
-                <button
-                  class="vice-upload-btn"
-                  onclick="document.getElementById('vice-photo-input').click()"
-                >
-                  Upload Photo
-                </button>
-              </div>
               <img
-                id="vicePhotoImg"
-                style="
-                  display: none;
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                  object-position: top;
-                "
+                src="./images/konu.jpeg"
+                alt="Mr. Konu"
+                class="vice-photo-img"
               />
             </div>
           </div>
@@ -464,7 +374,9 @@
         </h2>
         <div class="innovations-grid">
           <div class="innovation-card" onclick="openModal('digital')">
-            <div class="innovation-icon icon-blue">💻</div>
+            <div class="innovation-icon icon-blue">
+              <i data-lucide="monitor" style="color: white"></i>
+            </div>
             <div class="innovation-title">SPetSSA Goes Digital</div>
             <div class="innovation-desc">
               A live, integrated digital platform connecting every student to
@@ -485,7 +397,9 @@
             <button class="inno-deep-btn">Full Deep Dive →</button>
           </div>
           <div class="innovation-card" onclick="openModal('industry')">
-            <div class="innovation-icon icon-gold">🏭</div>
+            <div class="innovation-icon icon-blue">
+              <i data-lucide="factory" style="color: white"></i>
+            </div>
             <div class="innovation-title">Industry Readiness Initiative</div>
             <div class="innovation-desc">
               Closing the gap between classroom and career — through technical
@@ -524,12 +438,34 @@
               long after any single administration.
             </p>
             <div class="legacy-pills">
-              <span class="legacy-pill">🎓 Sustainable Support</span>
               <span class="legacy-pill"
-                >💡 Financially Challenged Students</span
+                ><i
+                  data-lucide="lightbulb"
+                  style="color: #f0c84a; width: 1em; height: 1em"
+                ></i>
+                Sustainable Support</span
               >
-              <span class="legacy-pill">🌍 Faculty-Wide Impact</span>
-              <span class="legacy-pill">📈 Academic Excellence</span>
+              <span class="legacy-pill"
+                ><i
+                  data-lucide="user"
+                  style="color: #f0c84a; width: 1em; height: 1em"
+                ></i>
+                Financially Challenged Students</span
+              >
+              <span class="legacy-pill"
+                ><i
+                  data-lucide="users"
+                  style="color: #f0c84a; width: 1em; height: 1em"
+                ></i>
+                Faculty-Wide Impact</span
+              >
+              <span class="legacy-pill"
+                ><i
+                  data-lucide="award"
+                  style="color: #f0c84a; width: 1em; height: 1em"
+                ></i>
+                Academic Excellence</span
+              >
             </div>
             <button class="btn-primary" onclick="openModal('legacy')">
               See Implementation Timeline →
@@ -585,41 +521,14 @@
     </section>
 
     <section id="flier-section">
-      <div class="section-inner">
-        <div class="section-eyebrow">Campaign Materials</div>
-        <h2 class="section-title">Upload Your Agenda Flier</h2>
-        <p style="color: var(--muted); margin-top: 0.75rem; font-size: 0.9rem">
-          Add campaign fliers, agenda posters, or any visual materials to share
-          with students.
-        </p>
-        <div
-          class="flier-upload-area"
-          id="flierDropzone"
-          onclick="document.getElementById('flier-input').click()"
-          ondragover="
-            event.preventDefault();
-            this.classList.add('dragover');
-          "
-          ondragleave="this.classList.remove('dragover')"
-          ondrop="handleFlierDrop(event)"
-        >
-          <div class="upload-icon">📋</div>
-          <p>
-            <strong>Click to upload</strong> or drag &amp; drop your flier here
-          </p>
-          <p style="margin-top: 0.5rem; font-size: 0.8rem">
-            PNG, JPG supported · Multiple files welcome
-          </p>
-        </div>
-        <input
-          type="file"
-          id="flier-input"
-          accept="image/*"
-          multiple
-          onchange="handleFlierUpload(this)"
-        />
-        <div class="flier-preview-area" id="flierPreview"></div>
-      </div>
+      <div class="ring ring-1"></div>
+      <div class="ring ring-2"></div>
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+      <div class="dot dot-4"></div>
+
+      <img src="./images/flier.jpeg" alt="agenda-flier" class="agenda-flier" />
     </section>
 
     <section id="newsletter">
@@ -638,23 +547,48 @@
             </p>
             <div class="nl-benefits">
               <div class="nl-benefit">
-                <div class="nl-benefit-icon">📢</div>
+                <div class="nl-benefit-icon">
+                  <i
+                    data-lucide="mail"
+                    style="color: white; width: 1em; height: 1em"
+                  ></i>
+                </div>
                 Direct updates on MOTION policies and campaign progress
               </div>
               <div class="nl-benefit">
-                <div class="nl-benefit-icon">💼</div>
+                <div class="nl-benefit-icon">
+                  <i
+                    data-lucide="briefcase"
+                    style="color: white; width: 1em; height: 1em"
+                  ></i>
+                </div>
                 First access to FEN internships, mentorship and opportunities
               </div>
               <div class="nl-benefit">
-                <div class="nl-benefit-icon">💡</div>
+                <div class="nl-benefit-icon">
+                  <i
+                    data-lucide="lightbulb"
+                    style="color: white; width: 1em; height: 1em"
+                  ></i>
+                </div>
                 Share your ideas — shape the MOTION agenda directly
               </div>
               <div class="nl-benefit">
-                <div class="nl-benefit-icon">🤝</div>
+                <div class="nl-benefit-icon">
+                  <i
+                    data-lucide="users"
+                    style="color: white; width: 1em; height: 1em"
+                  ></i>
+                </div>
                 Join a growing network of UMaT engineering students
               </div>
               <div class="nl-benefit">
-                <div class="nl-benefit-icon">🗳️</div>
+                <div class="nl-benefit-icon">
+                  <i
+                    data-lucide="vote"
+                    style="color: white; width: 1em; height: 1em"
+                  ></i>
+                </div>
                 Be part of SPetSSA's most open and connected administration
               </div>
             </div>
@@ -664,7 +598,7 @@
               <div class="nl-form-title">Join FEN & Stay Informed</div>
               <div class="form-row">
                 <div class="form-group">
-                  <label>First Name</label
+                  <label>First Name</label>
                   ><input
                     type="text"
                     placeholder="e.g. Kofi"
@@ -972,5 +906,8 @@
     <script src="script.js"></script>
     <script src="/_vercel/speed-insights/script.js" defer></script>
     <script defer src="/_vercel/insights/script.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>

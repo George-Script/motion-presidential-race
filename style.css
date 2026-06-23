@@ -156,8 +156,10 @@ nav {
 .hero-right {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 2rem;
 }
 .hero-accent-ring {
   position: absolute;
@@ -230,6 +232,111 @@ nav {
   object-fit: cover;
   object-position: top;
 }
+#flier-section {
+  position: relative;
+  background-color: #efc781;
+
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+
+#flier-section::before {
+  content: "MOTION";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: min(18vw, 220px);
+
+  color: rgba(255, 255, 255, 0.12);
+  letter-spacing: -0.05em;
+}
+
+#flier-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+
+#flier-section .ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  pointer-events: none;
+}
+
+#flier-section .ring-1 {
+  width: 900px;
+  height: 900px;
+  top: 50%;
+  left: -350px;
+  transform: translateY(-50%);
+}
+
+#flier-section .ring-2 {
+  width: 1200px;
+  height: 1200px;
+  top: 50%;
+  right: -500px;
+  transform: translateY(-50%);
+}
+
+#flier-section .dot {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.dot-1 {
+  width: 12px;
+  height: 12px;
+  top: 18%;
+  left: 12%;
+}
+
+.dot-2 {
+  width: 18px;
+  height: 18px;
+  bottom: 22%;
+  left: 18%;
+}
+
+.dot-3 {
+  width: 10px;
+  height: 10px;
+  top: 25%;
+  right: 15%;
+}
+
+.dot-4 {
+  width: 20px;
+  height: 20px;
+  bottom: 15%;
+  right: 12%;
+}
+
+.agenda-flier {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 900px;
+  margin: 0 auto;
+}
 .hero-bg-letters {
   position: absolute;
   inset: 0;
@@ -245,7 +352,9 @@ nav {
   pointer-events: none;
 }
 .hero-badge {
-  position: absolute;
+  position: static;
+  margin-top: 0.5rem;
+  z-index: auto;
   bottom: 2rem;
   right: 2rem;
   background: var(--gold);
@@ -783,44 +892,6 @@ section {
 .legacy-metric-label {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.82rem;
-}
-#flier-section {
-  background: var(--white);
-  padding: 5rem 0;
-}
-.flier-upload-area {
-  margin-top: 2.5rem;
-  border: 2px dashed rgba(44, 82, 130, 0.3);
-  border-radius: 16px;
-  padding: 3rem;
-  text-align: center;
-  transition:
-    border-color 0.2s,
-    background 0.2s;
-  cursor: pointer;
-}
-.flier-upload-area:hover,
-.flier-upload-area.dragover {
-  border-color: var(--gold);
-  background: rgba(212, 162, 43, 0.04);
-}
-.flier-upload-area .upload-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-.flier-upload-area p {
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-.flier-preview-area {
-  margin-top: 2rem;
-  display: none;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.flier-preview-area.has-files {
-  display: flex;
 }
 .flier-thumb {
   position: relative;
@@ -1381,5 +1452,16 @@ input[type="file"] {
   }
   .nav-links {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .hero-right {
+    margin-top: 1rem;
+  }
+
+  .hero-badge {
+    margin-top: 2rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
   }
 }
