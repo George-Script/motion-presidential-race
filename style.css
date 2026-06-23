@@ -390,7 +390,6 @@ section {
 .meet-grid,
 .vice-grid {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
   gap: 5rem;
   align-items: center;
   margin-top: 3.5rem;
@@ -1426,5 +1425,48 @@ footer p {
     margin-top: 2rem;
     font-size: 0.65rem;
     letter-spacing: 0.08em;
+  }
+}
+@media (min-width: 900px) {
+  .meet-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-areas: "photo text";
+  }
+
+  .meet-photo-col {
+    grid-area: photo;
+  }
+
+  .meet-text-col {
+    grid-area: text;
+  }
+
+  .vice-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: "text photo";
+  }
+
+  .vice-text-col {
+    grid-area: text;
+  }
+
+  .vice-photo-col {
+    grid-area: photo;
+  }
+
+  .konu-grid {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: "text photo";
+  }
+}
+@media (max-width: 899px) {
+  .meet-grid,
+  .vice-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "photo"
+      "text";
   }
 }
