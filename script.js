@@ -79,7 +79,7 @@ var modalData = {
       "Every student in SPetSSA deserves the tools to excel academically — not just those who can afford extra tutoring. This policy builds a peer-powered, student-led academic support infrastructure that reaches everyone.",
     details: [
       "Organized report-writing and technical writing sessions each semester",
-      "Structured peer tutorials and extra classes for core Petroleum Engineering courses",
+      "Structured peer tutorials and extra classes for core Engineering courses",
       "A mentorship program pairing senior students with first and second years",
       "A centralized academic resource hub: past exam papers, study notes, tutorial videos",
       "Student Development Initiative targeting soft skills and career-readiness",
@@ -118,9 +118,9 @@ var modalData = {
     tag: "Policy 4 of 6",
     title: "Opportunities for Women",
     overview:
-      "Women in petroleum and engineering at UMaT face structural barriers that ambition alone cannot overcome. This policy builds the dedicated infrastructure — platforms, mentors, networks — to ensure they rise on the strength of their capabilities.",
+      "SPetSSA Women in engineering at UMaT face structural barriers that ambition alone cannot overcome. This policy builds the dedicated infrastructure — platforms, mentors, networks — to ensure they rise on the strength of their capabilities.",
     details: [
-      "A dedicated Women in Petroleum forum within SPetSSA",
+      "A dedicated Women in Engineering (SPetSSA CHAPTER) forum within SPetSSA",
       "Mentorship program connecting female students with women professionals in the energy sector",
       "Targeted initiatives to increase women's participation in leadership positions",
       "Safe, structured platforms for women to voice challenges and co-create solutions",
@@ -135,7 +135,7 @@ var modalData = {
       },
       {
         phase: "Month 2",
-        event: "Launch Women in Petroleum Forum",
+        event: "Launch SPetSSA Women in Engineering Forum",
         desc: "Inaugural session and ongoing monthly meeting space.",
       },
       {
