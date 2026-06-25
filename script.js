@@ -116,7 +116,7 @@ var modalData = {
   o2: {
     letter: "O",
     tag: "Policy 4 of 6",
-    title: "Opportunities for Women",
+    title: "Opportunities for All",
     overview:
       "SPetSSA Women in engineering at UMaT face structural barriers that ambition alone cannot overcome. This policy builds the dedicated infrastructure — platforms, mentors, networks — to ensure they rise on the strength of their capabilities.",
     details: [
