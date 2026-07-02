@@ -83,6 +83,8 @@ var modalData = {
       "A mentorship program pairing senior students with first and second years",
       "A centralized academic resource hub: past exam papers, study notes, tutorial videos",
       "Student Development Initiative targeting soft skills and career-readiness",
+      "Provision of printers for each department to reduce the cost of printing handouts, reports and academic documents — at affordable, student-friendly pricing",
+      "Provision of microphones and related audio equipment to support effective teaching and learning during lecture meetings",
     ],
     why: "Academic failure is often a resource problem, not a talent problem. By building accessible support structures, MOTION ensures every student's potential has the environment it needs to grow.",
     timeline: [
@@ -118,35 +120,40 @@ var modalData = {
     tag: "Policy 4 of 6",
     title: "Opportunities for All",
     overview:
-      "SPetSSA Women in engineering at UMaT face structural barriers that ambition alone cannot overcome. This policy builds the dedicated infrastructure — platforms, mentors, networks — to ensure they rise on the strength of their capabilities.",
+      "Every student in SPetSSA — regardless of year, department, gender or background — deserves equitable access to skills, professional development and industry resources. This policy closes the gap between opportunity and access for everyone.",
     details: [
-      "A dedicated Women in Engineering (SPetSSA CHAPTER) forum within SPetSSA",
-      "Mentorship program connecting female students with women professionals in the energy sector",
-      "Targeted initiatives to increase women's participation in leadership positions",
-      "Safe, structured platforms for women to voice challenges and co-create solutions",
-      "Partnership with external organizations supporting women in STEM and energy",
+      "Cross-Level Skills Bootcamps: Practical technical training and certification pathways tailored to add value at all academic levels",
+      "Accessible Professional Development: Equitable access to CV building, LinkedIn optimization, and mentorship for every student regardless of background",
+      "Inclusive Resource Distribution: Transparent broadcasting of all training materials and industry opportunities across every department",
+      "Dedicated platforms and initiatives that encourage the growth, participation and advancement of women within the School of Petroleum Studies",
+      "Mentorship opportunities connecting students with professionals in the energy sector",
     ],
-    why: "When women are structurally supported — not just encouraged — they excel and they lift others. SPetSSA becomes stronger when every talent is fully activated.",
+    why: "Opportunity without access is just privilege by another name. When every student — no matter their year, programme, or background — has a clear path to development, SPetSSA's collective strength multiplies.",
     timeline: [
       {
         phase: "Month 1",
-        event: "Women's Development Working Group",
-        desc: "Form a working group of female students to lead the design of this initiative.",
+        event: "Inclusivity & Opportunities Working Group",
+        desc: "Form a cross-departmental student working group to design the bootcamp and development framework.",
       },
       {
         phase: "Month 2",
-        event: "Launch SPetSSA Women in Engineering Forum",
-        desc: "Inaugural session and ongoing monthly meeting space.",
+        event: "First Skills Bootcamp",
+        desc: "Launch the inaugural cross-level technical training and certification session.",
+      },
+      {
+        phase: "Month 2–3",
+        event: "Professional Development Programme",
+        desc: "CV clinics, LinkedIn workshops and mentor matching open to all SPetSSA students.",
       },
       {
         phase: "Month 3",
-        event: "Mentor matching",
-        desc: "Connect female students to women professionals and senior student mentors.",
+        event: "Resource Distribution System live",
+        desc: "All training materials and industry opportunities broadcast transparently across every department.",
       },
       {
         phase: "Each Semester",
-        event: "Advancement report",
-        desc: "Review and publish data on women's participation and leadership across SPetSSA.",
+        event: "Participation & advancement report",
+        desc: "Review and publish data on student participation and outcomes across all initiatives.",
       },
     ],
   },
@@ -230,11 +237,14 @@ var modalData = {
     overview:
       "A comprehensive digital platform bringing the full life of SPetSSA into one accessible space — opportunities, resources, announcements, and student engagement — live, verified, and always available.",
     details: [
+      "Digital dues collection with full financial tracking — students can view and verify every payment made",
       "Live opportunities board: internships, scholarships, competitions posted in real time",
+      "Real-time announcement system: critical information reaches every student instantly",
+      "Dedicated digital platform for transparent, secure student voting processes",
+      "Student engagement features: polls, feedback forms, and community boards",
+      "Paperless association operations: reducing cost, waste and delays across all administrative workflows",
       "Digital academic resource hub with verified study materials, past papers, and notes",
       "Verified database of study files — no more uncertain sources",
-      "Real-time announcement system: critical information reaches every student instantly",
-      "Student engagement features: polls, feedback forms, and community boards",
     ],
     why: "The information gap between students and opportunities is not about ambition — it is about access. A digital-first SPetSSA closes that gap permanently.",
     timeline: [
@@ -307,9 +317,52 @@ var modalData = {
       },
     ],
   },
-  legacy: {
-    letter: "N",
-    tag: "The Legacy Project",
+  banking: {
+    letter: "01",
+    tag: "Legacy Project 1 of 2",
+    title: "Freshmen Banking Initiative",
+    overview:
+      "Every incoming student deserves a smooth financial start at UMaT. Through partnerships with selected banks, SPetSSA will facilitate bank account creation for freshmen — with a portion of their dues serving as an initial deposit. This initiative directly supports the government's No Fees Stress Policy and extends to interested continuing students.",
+    details: [
+      "Partner with selected banks to facilitate bank account opening for all freshmen",
+      "A percentage of each student's dues paid will serve as the initial deposit into their new account",
+      "Seamless alignment with the government's running No Fees Stress Policy for financial relief",
+      "Continuing students who wish to open bank accounts may also opt in through the programme",
+      "Reduces the financial and logistical barriers to banking that many first-year students face",
+      "Creates a foundation for long-term student financial literacy and independence",
+    ],
+    why: "For many freshmen, arriving at university is their first time managing finances independently. A bank account — with an opening deposit already in it — is not a small thing. It is a foundation. This initiative makes that foundation automatic.",
+    timeline: [
+      {
+        phase: "Month 1",
+        event: "Bank partnership negotiations",
+        desc: "Identify and engage selected banks to formalize the partnership agreement.",
+      },
+      {
+        phase: "Month 2",
+        event: "Framework & MOU signing",
+        desc: "Sign memoranda of understanding with partner banks; define the dues-to-deposit mechanism.",
+      },
+      {
+        phase: "Semester 1 — Freshmen Intake",
+        event: "Initiative launch",
+        desc: "Facilitate bank account opening for all incoming freshmen during orientation period.",
+      },
+      {
+        phase: "Ongoing",
+        event: "Continuing student opt-in",
+        desc: "Open the programme to returning students who wish to participate.",
+      },
+      {
+        phase: "Each Year",
+        event: "Annual intake onboarding",
+        desc: "New cohort of freshmen automatically supported through the established partnership.",
+      },
+    ],
+  },
+  scholarship: {
+    letter: "02",
+    tag: "Legacy Project 2 of 2",
     title: "Faculty Scholarship Fund",
     overview:
       "The most lasting thing any student leader can do is build something that outlives their term. The SPetSSA Faculty Scholarship Fund creates a sustainable, peer-funded endowment that ensures no talented, deserving student is denied their future because of financial hardship.",

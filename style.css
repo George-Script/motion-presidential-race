@@ -858,6 +858,54 @@ section {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.82rem;
 }
+.legacy-projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 0;
+}
+.legacy-project-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2.5rem;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    transform 0.2s;
+}
+.legacy-project-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(212, 162, 43, 0.45);
+  transform: translateY(-3px);
+}
+.legacy-proj-num {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: 3.5rem;
+  color: rgba(212, 162, 43, 0.2);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.legacy-proj-title {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+.legacy-proj-desc {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+}
+@media (max-width: 700px) {
+  .legacy-projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .flier-thumb {
   position: relative;
   width: 180px;

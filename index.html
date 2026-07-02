@@ -33,27 +33,24 @@
           >
         </h1>
         <p class="hero-subtitle">
-          Merit. Openness. Tutorials. Industry-readiness. Opportunities for
-          women. Nurturing welfare &amp; a lasting legacy.
+          Building engineers beyond the classroom.
         </p>
         <div class="hero-cta-row">
           <button
             class="btn-primary"
-            onclick="
-              document
-                .getElementById('policies')
-                .scrollIntoView({ behavior: 'smooth' })
-            "
+            onclick="document.getElementById('policies').scrollIntoView({ behavior: 'smooth' })"
           >
-            Explore the Framework
+            Policies
           </button>
           <button
             class="btn-outline"
-            onclick="
-              document
-                .getElementById('newsletter')
-                .scrollIntoView({ behavior: 'smooth' })
-            "
+            onclick="document.getElementById('framework').scrollIntoView({ behavior: 'smooth' })"
+          >
+            The Framework
+          </button>
+          <button
+            class="btn-outline"
+            onclick="document.getElementById('newsletter').scrollIntoView({ behavior: 'smooth' })"
           >
             Join FEN
           </button>
@@ -127,8 +124,8 @@
                 <div class="stat-label">Network Founded</div>
               </div>
               <div class="stat-item">
-                <div class="stat-num">1<span class="gold">st</span></div>
-                <div class="stat-label">Legacy Project</div>
+                <div class="stat-num">2<span class="gold">+</span></div>
+                <div class="stat-label">Legacy Projects</div>
               </div>
             </div>
           </div>
@@ -298,36 +295,13 @@
             <div class="policy-card-tag">Policy 4 of 6</div>
             <div class="policy-card-title">Opportunities for All</div>
             <div class="policy-card-desc">
-              Dedicated platforms, mentorship and structural initiatives so
-              everybody in petroleum studies rises without limit.
+              Inclusive skills, equitable access to professional development,
+              and transparent resource distribution — for every student at every level.
             </div>
             <div class="policy-points">
-              <div class="policy-point">Dedicated women's growth platforms</div>
-              <div class="policy-point">Mentorship and peer network</div>
-              <div class="policy-point">
-                Initiatives for participation & advancement
-              </div>
-            </div>
-            <div class="policy-card-footer">
-              <button class="card-deep-btn">Deep Dive →</button>
-            </div>
-          </div>
-          <div class="policy-card" onclick="openModal('n1')">
-            <div class="policy-card-letter">N</div>
-            <div class="policy-card-tag">Policy 5 of 6</div>
-            <div class="policy-card-title">Campus Life & Recognition</div>
-            <div class="policy-card-desc">
-              Activities that build school spirit, and transparent recognition
-              for excellence, leadership and service.
-            </div>
-            <div class="policy-points">
-              <div class="policy-point">
-                Events that build unity & school spirit
-              </div>
-              <div class="policy-point">
-                Transparent recognition for excellence
-              </div>
-              <div class="policy-point">Stronger student communications</div>
+              <div class="policy-point">Cross-level skills bootcamps & certification pathways</div>
+              <div class="policy-point">CV building, LinkedIn & mentorship for all</div>
+              <div class="policy-point">Transparent resource broadcasting across departments</div>
             </div>
             <div class="policy-card-footer">
               <button class="card-deep-btn">Deep Dive →</button>
@@ -336,7 +310,7 @@
           <div class="policy-card" onclick="openModal('n2')">
             <div class="policy-card-letter">N</div>
             <div class="policy-card-tag">Policy 6 of 6</div>
-            <div class="policy-card-title">Student Welfare & Mental Health</div>
+            <div class="policy-card-title">Nurturing Student Welfare & Mental Health</div>
             <div class="policy-card-desc">
               Mental health prioritized, concerns heard, advocacy strengthened —
               for the whole student experience.
@@ -349,6 +323,27 @@
               <div class="policy-point">
                 Advocacy for the student experience
               </div>
+            </div>
+            <div class="policy-card-footer">
+              <button class="card-deep-btn">Deep Dive →</button>
+            </div>
+          </div>
+          <div class="policy-card" onclick="openModal('n1')">
+            <div class="policy-card-letter">S</div>
+            <div class="policy-card-tag">Policy 5 of 6</div>
+            <div class="policy-card-title">SPetSSA Campus Life & Recognition</div>
+            <div class="policy-card-desc">
+              Activities that build school spirit, and transparent recognition
+              for excellence, leadership and service.
+            </div>
+            <div class="policy-points">
+              <div class="policy-point">
+                Events that build unity & school spirit
+              </div>
+              <div class="policy-point">
+                Transparent recognition for excellence
+              </div>
+              <div class="policy-point">Stronger student communications</div>
             </div>
             <div class="policy-card-footer">
               <button class="card-deep-btn">Deep Dive →</button>
@@ -415,100 +410,37 @@
 
     <section id="legacy">
       <div class="section-inner">
-        <div class="legacy-inner">
-          <div>
-            <div
-              class="section-eyebrow"
-              style="color: rgba(255, 255, 255, 0.5)"
-            >
-              The Legacy Project
-            </div>
-            <h2 class="section-title light">Faculty Scholarship Fund</h2>
-            <p class="legacy-desc">
-              No talented student should be priced out of their future. The
-              SPetSSA Faculty Scholarship Fund creates a sustainable,
-              student-driven endowment that lifts deserving, financially
-              challenged peers and promotes academic excellence faculty-wide —
-              long after any single administration.
+        <div class="section-eyebrow" style="color: rgba(255,255,255,0.5)">The Legacy Projects</div>
+        <h2 class="section-title light">Two lasting marks.<br/>Built to outlast us.</h2>
+        <p class="legacy-desc" style="max-width:600px; margin-top:1rem; margin-bottom:3rem;">
+          These are not one-term programmes. They are structural additions to SPetSSA — designed to serve every future student long after MOTION.
+        </p>
+        <div class="legacy-projects-grid">
+          <div class="legacy-project-card" onclick="openModal('banking')">
+            <div class="legacy-proj-num">01</div>
+            <div class="legacy-proj-title">Freshmen Banking Initiative</div>
+            <p class="legacy-proj-desc">
+              Partner with selected banks to help freshmen open bank accounts on arrival. A percentage of dues paid serves as an initial deposit — aligning with the government's No Fees Stress Policy. Continuing students may also opt in.
             </p>
-            <div class="legacy-pills">
-              <span class="legacy-pill"
-                ><i
-                  data-lucide="lightbulb"
-                  style="color: #f0c84a; width: 1em; height: 1em"
-                ></i>
-                Sustainable Support</span
-              >
-              <span class="legacy-pill"
-                ><i
-                  data-lucide="user"
-                  style="color: #f0c84a; width: 1em; height: 1em"
-                ></i>
-                Financially Challenged Students</span
-              >
-              <span class="legacy-pill"
-                ><i
-                  data-lucide="users"
-                  style="color: #f0c84a; width: 1em; height: 1em"
-                ></i>
-                Faculty-Wide Impact</span
-              >
-              <span class="legacy-pill"
-                ><i
-                  data-lucide="award"
-                  style="color: #f0c84a; width: 1em; height: 1em"
-                ></i>
-                Academic Excellence</span
-              >
+            <div class="legacy-pills" style="margin-top:1.25rem; margin-bottom:1.5rem;">
+              <span class="legacy-pill">Bank Partnerships</span>
+              <span class="legacy-pill">No Fees Stress Policy</span>
+              <span class="legacy-pill">Financial Inclusion</span>
             </div>
-            <button class="btn-primary" onclick="openModal('legacy')">
-              See Implementation Timeline →
-            </button>
+            <button class="inno-deep-btn">Learn More →</button>
           </div>
-          <div class="legacy-card" onclick="openModal('legacy')">
-            <div class="legacy-card-sub">Legacy Initiative</div>
-            <div class="legacy-card-title">Faculty Scholarship Fund</div>
-            <p
-              style="
-                color: rgba(255, 255, 255, 0.55);
-                font-size: 0.85rem;
-                margin-bottom: 2rem;
-                line-height: 1.6;
-              "
-            >
-              A structural endowment built to outlast any single term — giving
-              deserving students the chance they have earned.
+          <div class="legacy-project-card" onclick="openModal('scholarship')">
+            <div class="legacy-proj-num">02</div>
+            <div class="legacy-proj-title">Faculty Scholarship Fund</div>
+            <p class="legacy-proj-desc">
+              A sustainable, student-driven endowment that lifts deserving, financially challenged peers and promotes academic excellence faculty-wide — long after any single administration ends.
             </p>
-            <div
-              style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem"
-            >
-              <div>
-                <div class="legacy-metric">∞</div>
-                <div class="legacy-metric-label">Long-term sustainability</div>
-              </div>
-              <div>
-                <div class="legacy-metric" style="color: #60a5fa">100%</div>
-                <div class="legacy-metric-label">Student-centered</div>
-              </div>
+            <div class="legacy-pills" style="margin-top:1.25rem; margin-bottom:1.5rem;">
+              <span class="legacy-pill">Sustainable Support</span>
+              <span class="legacy-pill">Financially Challenged Students</span>
+              <span class="legacy-pill">Faculty-Wide Impact</span>
             </div>
-            <div
-              style="
-                margin-top: 2rem;
-                padding-top: 1.5rem;
-                border-top: 1px solid rgba(255, 255, 255, 0.1);
-              "
-            >
-              <p
-                style="
-                  color: rgba(255, 255, 255, 0.4);
-                  font-size: 0.78rem;
-                  text-transform: uppercase;
-                  letter-spacing: 0.1em;
-                "
-              >
-                Click to view full timeline →
-              </p>
-            </div>
+            <button class="inno-deep-btn">Learn More →</button>
           </div>
         </div>
       </div>
@@ -522,7 +454,7 @@
       <div class="dot dot-3"></div>
       <div class="dot dot-4"></div>
 
-      <img src="./images/flier.jpeg" alt="agenda-flier" class="agenda-flier" />
+      <img src="./images/flier.PNG" alt="agenda-flier" class="agenda-flier" />
     </section>
 
     <section id="newsletter">
